@@ -94,14 +94,20 @@
 # for i in range(1,a+1,2):
 #     print(i)
 # 20 hato
-def musbat_son(son):
-    musbat= son>=0
-    return musbat
-print(musbat_son([-1,1,23,-7,85,-78,9,-65,7,-8,-9,-10,2,3,1]))
+# def musbat_son(son):
+#     musbat= son>=0
+#     return musbat
+# print(musbat_son([-1,1,23,-7,85,-78,9,-65,7,-8,-9,-10,2,3,1]))
 # 21
 # def manfiy_son(son):
 #     manfiy=son<0
 #     return manfiy
 # print(manfiy_son([1,-7,-8,-9,4,52,1,6,31,-555,-11,-86,0]))
 
-       
+
+def orta_arifmetik(*sonlar):
+    yigindi = sum(sonlar)
+    orta = yigindi/len(sonlar)
+    return orta
+
+print(orta_arifmetik(1,2,3,6,10))
